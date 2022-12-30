@@ -1,24 +1,23 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <title>&lt;model-viewer&gt; template</title>
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" src="ver.4.0 rigging2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="music_hall_01_1k.hdr" poster="poster.webp" shadow-intensity="1" skybox-image="music_hall_01_1k.hdr">
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-    </model-viewer>
-    
+    <model-viewer src="lily meshi.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.71" environment-image="music_hall_01_1k.hdr" skybox-image="music_hall_01_1k.hdr" exposure="1.38">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+    </model-viewer>  
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</body>
+  </body>
 </html>
